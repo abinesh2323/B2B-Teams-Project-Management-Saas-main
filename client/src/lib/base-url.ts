@@ -1,1 +1,1 @@
-export const baseURL = "https://final-10127220908.catalystappsail.com/api";
+export const baseURL = "https://advanced-mern-b2b-teams-project-roqm.onrender.com/api";
