@@ -37,11 +37,19 @@ const allowedOrigins = [
   "https://officehubtech.onslate.com",
   "https://advanced-mern-b2b-te-bojufosh.onslate.com",
   "http://localhost:5173",
+  "https://final-10127220908.catalystappsail.com",
 ];
 
 app.use(
   cors({
-    origin: config.FRONTEND_ORIGIN,
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
