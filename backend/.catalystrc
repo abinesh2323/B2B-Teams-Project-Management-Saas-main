@@ -1,0 +1,36 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "37343000000350064",
+      "name": "creatorform",
+      "domain": {
+        "id": "10127368540",
+        "name": "creatorform-899085195.development"
+      },
+      "timezone": "Asia/Tokyo",
+      "env": [
+        {
+          "idx": 1,
+          "id": "899085195",
+          "name": "Development",
+          "type": 3
+        },
+        {
+          "idx": 2,
+          "id": "10128039360",
+          "name": "Production",
+          "type": 1
+        }
+      ]
+    }
+  ]
+}

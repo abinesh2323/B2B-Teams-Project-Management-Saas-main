@@ -1,0 +1,8 @@
+{
+  "appsail": [
+    {
+      "source": "docker://teamsync-backend:latest",
+      "name": "AppSail"
+    }
+  ]
+}
