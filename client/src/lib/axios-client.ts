@@ -1,7 +1,6 @@
+import { baseURL } from "@/lib/base-url";
 import { CustomError } from "@/types/custom-error.type";
 import axios from "axios";
-
-const baseURL = import.meta.env.VITE_API_BASE_URL || "https://advanced-mern-b2b-teams-project-roqm.onrender.com/api";
 
 const options = {
   baseURL,
